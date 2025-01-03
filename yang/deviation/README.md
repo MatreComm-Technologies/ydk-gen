@@ -1,0 +1,1 @@
+This directory contains openconfig models and deviation models from [Cisco XR 6.2.1 release](https://github.com/YangModels/yang/tree/74bf74f94ffe38eeafd68bd4d14eb6c4ae8f3ad4/vendor/cisco/xr/621), with all `must` statement stripped.

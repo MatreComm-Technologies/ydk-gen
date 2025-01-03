@@ -1,0 +1,57 @@
+{
+    "name": "ydktest",
+    "version":"0.1.1",
+    "core_version":"0.8.1",
+    "author": "Cisco",
+    "copyright": "Cisco",
+    "description": "YDK Test Profile",
+    "models": {
+        "file": [
+            "sdk/cpp/core/tests/models/ietf-interfaces@2014-05-08.yang",
+            "sdk/cpp/core/tests/models/ietf-netconf-monitoring@2010-10-04.yang",
+            "sdk/cpp/core/tests/models/main@2015-11-17.yang",
+            "sdk/cpp/core/tests/models/main-aug1@2015-11-17.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-common-multiprotocol.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-common-structure.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-common.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-global.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-neighbor.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-peer-group.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-policy.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp-types.yang",
+            "sdk/cpp/core/tests/models/openconfig-bgp.yang",
+            "sdk/cpp/core/tests/models/openconfig-extensions.yang",
+            "sdk/cpp/core/tests/models/openconfig-interfaces.yang",
+            "sdk/cpp/core/tests/models/openconfig-if-ethernet.yang",
+            "sdk/cpp/core/tests/models/openconfig-policy-types.yang",
+            "sdk/cpp/core/tests/models/openconfig-routing-policy.yang",
+            "sdk/cpp/core/tests/models/openconfig-types.yang",
+            "sdk/cpp/core/tests/models/openconfig-platform.yang",
+            "sdk/cpp/core/tests/models/openconfig-platform-transceiver.yang",
+            "sdk/cpp/core/tests/models/openconfig-platform-types.yang",
+            "sdk/cpp/core/tests/models/openconfig-transport-types.yang",
+            "sdk/cpp/core/tests/models/openconfig-terminal-device.yang",
+            "sdk/cpp/core/tests/models/ydktest-filterread@2015-11-17.yang",
+            "sdk/cpp/core/tests/models/ydktest-sanity-augm@2015-11-17.yang",
+            "sdk/cpp/core/tests/models/ydktest-sanity-submodule@2016-04-25.yang",
+            "sdk/cpp/core/tests/models/ydktest-sanity-typedefs@2018-01-30.yang",
+            "sdk/cpp/core/tests/models/ydktest-sanity-types@2016-04-11.yang",
+            "sdk/cpp/core/tests/models/ydktest-sanity@2015-11-17.yang",
+            "sdk/cpp/core/tests/models/ydktest-types@2016-05-23.yang",
+            "sdk/cpp/core/tests/models/oc-pattern@2015-11-17.yang",
+            "sdk/cpp/core/tests/models/iana-crypt-hash@2014-08-06.yang",
+
+            "yang/ietf/ietf-inet-types@2013-07-15.yang",
+            "yang/ietf/ietf-yang-types@2013-07-15.yang",
+            "yang/ietf/iana-if-type.yang",
+            "yang/ietf/ietf-netconf-acm@2012-02-22.yang",
+            "yang/ietf/ietf-netconf-with-defaults@2011-06-01.yang",
+            "yang/ietf/ietf-netconf@2011-06-01.yang",
+            "yang/ietf/ietf-system.yang"
+        ],
+
+        "dir": [
+            "yang/ydktest-augmentation"
+        ]
+    }
+}

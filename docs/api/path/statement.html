@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statement &mdash; YANG Development Kit 0.8.6.6 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/width.css?v=6892ff54" />
+
+  
+    <link rel="shortcut icon" href="../../_static/icon.ico"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=d688945f"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="NetconfSession" href="netconf_session.html" />
+    <link rel="prev" title="SchemaNode" href="schema_node.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            YANG Development Kit
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about_ydk.html">About YDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_guide.html">API Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../class_hierarchy.html">YDK API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="path.html">YDK Path API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capability.html">Capability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codec.html">Codec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_node.html">DataNode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="repository.html">Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="root_schema_node.html">RootSchemaNode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rpc.html">Rpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="schema_node.html">SchemaNode</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Statement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ydk.path.Statement"><code class="docutils literal notranslate"><span class="pre">Statement</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="netconf_session.html">NetconfSession</a></li>
+<li class="toctree-l3"><a class="reference internal" href="restconf_session.html">RestconfSession</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gnmi_session.html">gNMISession</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Questions and Answers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">YANG Development Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../api_guide.html">API Guide</a></li>
+          <li class="breadcrumb-item"><a href="path.html">YDK Path API</a></li>
+      <li class="breadcrumb-item active">Statement</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ydk.path">
+<span id="statement"></span><h1>Statement<a class="headerlink" href="#module-ydk.path" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ydk.path.Statement">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ydk.path.</span></span><span class="sig-name descname"><span class="pre">Statement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keyword</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ydk.path.Statement" title="Link to this definition"></a></dt>
+<dd><p>Represents the YANG Statement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keyword</strong> – (<code class="docutils literal notranslate"><span class="pre">str</span></code>) YANG keyword.</p></li>
+<li><p><strong>arg</strong> – (<code class="docutils literal notranslate"><span class="pre">str</span></code>) YANG argument.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ydk.path.Statement.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><a class="headerlink" href="#ydk.path.Statement.keyword" title="Link to this definition"></a></dt>
+<dd><p>Read only attribute for YANG keyword.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ydk.path.Statement.arg">
+<span class="sig-name descname"><span class="pre">arg</span></span><a class="headerlink" href="#ydk.path.Statement.arg" title="Link to this definition"></a></dt>
+<dd><p>Read only attribute for YANG argument.</p>
+</dd></dl>
+
+<p>Example usage for creating a statement:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ydk.path</span> <span class="kn">import</span> <span class="n">Statement</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Statement</span><span class="p">(</span><span class="s1">&#39;container&#39;</span><span class="p">,</span> <span class="s1">&#39;bgp&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example usage for getting statement from schema node:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ydk.path</span> <span class="kn">import</span> <span class="n">NetconfSession</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">session</span> <span class="o">=</span> <span class="n">NetconfSession</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="mi">830</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">root_schema</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get_root_schema</span><span class="p">()</span>                               <span class="c1"># &lt;-- root_schema is an instance of RootSchemaNode</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bgp</span> <span class="o">=</span> <span class="n">root_schema</span><span class="o">.</span><span class="n">create_datanode</span><span class="p">(</span><span class="s1">&#39;openconfig-bgp:bgp&#39;</span><span class="p">)</span>               <span class="c1"># &lt;-- bgp is an instance of DataNode</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">schema_node</span> <span class="o">=</span> <span class="n">bgp</span><span class="o">.</span><span class="n">get_schema_node</span><span class="p">()</span>                                   <span class="c1"># &lt;-- schema node for bgp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">statement</span> <span class="o">=</span> <span class="n">schema_node</span><span class="o">.</span><span class="n">get_statement</span><span class="p">()</span>                               <span class="c1"># &lt;-- YANG statement for this schema node</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">statement</span><span class="o">.</span><span class="n">keyword</span>
+<span class="go">&#39;container&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">statement</span><span class="o">.</span><span class="n">arg</span>
+<span class="go">&#39;bgp&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="schema_node.html" class="btn btn-neutral float-left" title="SchemaNode" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="netconf_session.html" class="btn btn-neutral float-right" title="NetconfSession" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

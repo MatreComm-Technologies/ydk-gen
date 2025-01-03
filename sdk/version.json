@@ -1,0 +1,10 @@
+{
+    "core": "0.8.6.6",
+    "version": "0.8.6.6",
+    "gnmi-service": "0.4.0.5",
+    "ietf": "0.1.6",
+    "openconfig": "0.1.9",
+    "cisco_ios_xr": "7.0.2",
+    "cisco_ios_xe": "16.9.3",
+    "cisco_nx_os": "9.3.1"
+}
