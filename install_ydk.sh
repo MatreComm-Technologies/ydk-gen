@@ -212,16 +212,16 @@ function init_go_env {
 function install_cpp_core {
     print_msg "Installing C++ core library"
     cd $YDKGEN_HOME
-    local cpp_sudo_flag
-    if [ $(id -u -n) != "root" ]; then cpp_sudo_flag="s"; fi
-    run_cmd $PYTHON_BIN generate.py --core --cpp -i$cpp_sudo_flag
+    # local cpp_sudo_flag
+    # if [ $(id -u -n) != "root" ]; then cpp_sudo_flag=""; fi
+    run_cmd $PYTHON_BIN generate.py --core --cpp
 }
 
 function install_cpp_gnmi {
     print_msg "Building C++ core gnmi library"
     cd $YDKGEN_HOME
     local cpp_sudo_flag
-    if [ $(id -u -n) != "root" ]; then cpp_sudo_flag="s"; fi
+    if [ $(id -u -n) != "root" ]; then cpp_sudo_flag=""; fi
     run_cmd $PYTHON_BIN generate.py --service profiles/services/gnmi-0.4.0.json --cpp -i$cpp_sudo_flag
 }
 

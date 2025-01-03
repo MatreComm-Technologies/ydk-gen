@@ -515,6 +515,7 @@ if __name__ == '__main__':
         cmake_build_dir = os.path.join(output_directory, 'build')
         if options.install:
             os.chdir(cmake_build_dir)
+            print("the build directory is ", cmake_build_dir)
             print('\nCompiling {0} package ...\n'.format(language))
             if os.system('make') != 0:
                 print('\nCompilation failed!!')
